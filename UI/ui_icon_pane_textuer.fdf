@@ -1,0 +1,223 @@
+// -- INCLUDE FILES 引用控件模板文件-----
+IncludeFile "UI\FrameDef\Glue\BattleNetTemplates.fdf",
+IncludeFile "UI\FrameDef\UI\EscMenuTemplates.fdf",
+IncludeFile "UI\FrameDef\Glue\StandardTemplates.fdf",
+IncludeFile "UI\FrameDef\UI\InfoPanelTemplates.fdf",
+
+// 存档左移按钮
+Frame "TEXTBUTTON" "CDbtn_hy_0" {
+    Width 0.04,
+    Height 0.04,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+    //设置正常状态背景
+    ControlBackdrop "Demo_ButtonBack",
+    Frame "BACKDROP" "Demo_ButtonBack"
+    {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_7.tga",
+        BackdropBlendAll,
+    }
+    //设置按下状态下背景
+    ControlPushedBackdrop "Demo_ButtonPushedBack",
+	Frame "Backdrop" "Demo_ButtonPushedBack" {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_7.tga",
+		BackdropCornerSize  0.025,
+		BackdropBackgroundSize  0.035,
+		BackdropBackgroundInsets 0.001 0.001 0.001 0.001,
+		BackdropEdgeFile  "UI\Widgets\Glues\GlueScreen-Button2-BackdropBorder-Down.blp",
+        BackdropBlendAll,
+    }
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}
+// 存档右移按钮
+Frame "TEXTBUTTON" "CDbtn_hy_1" {
+    Width 0.04,
+    Height 0.04,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+    //设置正常状态背景
+    ControlBackdrop "Demo_ButtonBack",
+    Frame "BACKDROP" "Demo_ButtonBack"
+    {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_8.tga",
+        BackdropBlendAll,
+    }
+    //设置按下状态下背景
+    ControlPushedBackdrop "Demo_ButtonPushedBack",
+	Frame "Backdrop" "Demo_ButtonPushedBack" {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_8.tga",
+		BackdropCornerSize  0.025,
+		BackdropBackgroundSize  0.035,
+		BackdropBackgroundInsets 0.001 0.001 0.001 0.001,
+		BackdropEdgeFile  "UI\Widgets\Glues\GlueScreen-Button2-BackdropBorder-Down.blp",
+        BackdropBlendAll,
+    }
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}
+
+// 存档按钮
+Frame "TEXTBUTTON" "FBtn_Cd" {
+    Width 0.04,
+    Height 0.04,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+    //设置正常状态背景
+    ControlBackdrop "Demo_ButtonBack",
+    Frame "BACKDROP" "Demo_ButtonBack"
+    {
+        BackdropBackground  "ui_icon_pane_texture\UI_fcdan.tga",
+        BackdropBlendAll,
+    }
+    //设置按下状态下背景
+    ControlPushedBackdrop "Demo_ButtonPushedBack",
+	Frame "Backdrop" "Demo_ButtonPushedBack" {
+        BackdropBackground  "ui_icon_pane_texture\UI_fcdan.tga",
+		BackdropCornerSize  0.025,
+		BackdropBackgroundSize  0.035,
+		BackdropBackgroundInsets 0.004 0.004 0.004 0.004,
+		BackdropEdgeFile  "UI\Widgets\Glues\GlueScreen-Button2-BackdropBorder-Down.blp",
+        BackdropBlendAll,
+    }
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}
+
+// 存档左侧进入
+Frame "TEXTBUTTON" "FBtndh_cd" {
+    Width 0.10,
+    Height 0.0325,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+	//按钮文本 
+	ButtonText "UI_FunCD_dhl_bt",
+	Frame "TEXT" "UI_FunCD_dhl_bt" {
+		DecorateFileNames,
+		FontFlags "FIXEDSIZE",
+		FontJustificationH JUSTIFYCENTER,
+		FontJustificationV JUSTIFYMIDDLE, 
+	}
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}
+//No.1 [UI_Pr_SXMB_an_1]   :Frame定义结束
+
+// 存档道具按钮样式
+Frame "TEXTBUTTON" "UI_cdan" {
+    Width 0.03,
+    Height 0.03,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}
+
+//存档边框
+Frame "BACKDROP" "UI_cdBK" 
+{
+    BackdropTileBackground,
+    BackdropBackground  "UI\Widgets\ToolTips\Human\human-tooltip-background.blp",
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+    BackdropCornerSize  0.012,
+    BackdropBackgroundSize  0.032,
+    BackdropBackgroundInsets 0.004f 0.004f 0.004f 0.004f,
+    BackdropEdgeFile  "ui_icon_pane_texture\ui_icon_backbk.tga",
+    BackdropBlendAll,
+}
+
+// 导航栏上换页按钮
+Frame "TEXTBUTTON" "CDbtn_dhhy_1" {
+    Width 0.04,
+    Height 0.04,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+    //设置正常状态背景
+    ControlBackdrop "Demo_ButtonBack",
+    Frame "BACKDROP" "Demo_ButtonBack"
+    {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_10.tga",
+        BackdropBlendAll,
+    }
+    //设置按下状态下背景
+    ControlPushedBackdrop "Demo_ButtonPushedBack",
+	Frame "Backdrop" "Demo_ButtonPushedBack" {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_10.tga",
+		BackdropCornerSize  0.025,
+		BackdropBackgroundSize  0.035,
+		BackdropBackgroundInsets 0.001 0.001 0.001 0.001,
+		BackdropEdgeFile  "UI\Widgets\Glues\GlueScreen-Button2-BackdropBorder-Down.blp",
+        BackdropBlendAll,
+    }
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}
+
+// 导航栏上换页按钮
+Frame "TEXTBUTTON" "CDbtn_dhhy_0" {
+    Width 0.04,
+    Height 0.04,
+    //设置样式 悬停高亮                 可获取鼠标焦点 HIGHLTGHTONFOCUS
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+
+    //设置正常状态背景
+    ControlBackdrop "Demo_ButtonBack",
+    Frame "BACKDROP" "Demo_ButtonBack"
+    {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_9.tga",
+        BackdropBlendAll,
+    }
+    //设置按下状态下背景
+    ControlPushedBackdrop "Demo_ButtonPushedBack",
+	Frame "Backdrop" "Demo_ButtonPushedBack" {
+        BackdropBackground  "ui_icon_pane_texture\UI_cdk_9.tga",
+		BackdropCornerSize  0.025,
+		BackdropBackgroundSize  0.035,
+		BackdropBackgroundInsets 0.001 0.001 0.001 0.001,
+		BackdropEdgeFile  "UI\Widgets\Glues\GlueScreen-Button2-BackdropBorder-Down.blp",
+        BackdropBlendAll,
+    }
+    //悬停鼠标高亮
+	ControlMouseOverHighlight "Demo_ButtonHig",
+	Frame "HIGHLIGHT" "Demo_ButtonHig" {
+        HighlightType "FILETEXTURE",
+        HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+        HighlightAlphaMode "ADD",
+    }
+}

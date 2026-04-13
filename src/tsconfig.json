@@ -1,0 +1,120 @@
+{
+  //自定义配置
+  "compilerOptions": {
+    //    "rootDir": "./",
+    "rootDirs": [
+      "./",
+      ""
+    ],
+    "baseUrl": "./",
+    "outDir": "../scripts/",
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "preserveSymlinks": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": [
+        "solar/solar-common/constant/*",
+        "solar/solar-common/common/*",
+        "solar/solar-common/attribute/*",
+        "solar/solar-common/ui/*",
+        "solar/solar-common/actor/*",
+        "solar/solar-common/actor/state/*",
+        "solar/solar-common/actor/util/*",
+        "solar/solar-common/controller/*",
+        "solar/solar-common/tool/*",
+        "solar/solar-common/tool/event/*",
+        "solar/solar-common/tool/motion/*",
+        "solar/solar-common/framex/*",
+        "solar/solar-common/framex/layout/*",
+        "solar/solar-common/framex/control/*",
+        "solar/solar-common/w3ts/handles/*",
+        "solar/solar-common/w3ts/*",
+        "solar/solar-common/util/ability/*",
+        "solar/solar-common/util/action/*",
+        "solar/solar-common/util/archive/*",
+        "solar/solar-common/util/debug/*",
+        "solar/solar-common/util/frame/*",
+        "solar/solar-common/util/game/*",
+        "solar/solar-common/util/object/*",
+        "solar/solar-common/util/lang/*",
+        "solar/solar-common/util/math/*",
+        "solar/solar-common/util/net/*",
+        "solar/solar-common/util/other/*",
+        "solar/solar-common/util/system/*",
+        "solar/solar-common/util/text/*",
+        "solar/solar-common/util/unit/*",
+        "solar/solar-common/util/scene/*",
+        "solar/solar-common/util/*",
+        "solar/solar-common/lib/simulate/*",
+        "solar/solar-common/*"
+      ],
+      "@sl-wc3/*": [
+        "solar/solar-wc3/*",
+        "solar/solar-wc3/common/*",
+        "solar/solar-wc3/browser/*",
+        "solar/solar-wc3/util/ability/*",
+        "solar/solar-wc3/util/debug/*",
+        "solar/solar-wc3/util/scene/*",
+        "solar/solar-wc3/util/*"
+      ]
+    }
+  },
+  "include": [
+    "",
+    "./"
+  ],
+  "exclude": [],
+  "tstl": {
+    //指定要为其生成代码的 Lua 版本
+    //"JIT", "5.3", "5.2", "5.1"
+    "luaTarget": "5.3",
+    //    "luaTarget": "5.2",
+    //覆盖 Luadebug.traceback以将源映射应用于 Lua 堆栈跟踪。这将使错误消息指向您的原始 TypeScript 代码而不是生成的 Lua。
+    "sourceMapTraceback": true,
+    "luaLibImport": "require",
+    //这应该是项目中 TS 文件的名称/路径，它将作为代码的入口点。
+    "luaBundleEntry": "./App.ts",
+    //如果您不想在输出中包含ts2lua的标题，请将其设置为 true。
+    "noHeader": true,
+    "noResolvePaths": [
+      "jass.common",
+      "jass.console",
+      "jass.code",
+      "jass.debug",
+      "jass.dzapi",
+      "jass.globals",
+      "jass.japi",
+      "jass.runtime",
+      "jass.slk",
+      "jass.ai",
+      "jass.log",
+      "jass.message",
+      "jass.bignum",
+      "jass.hook",
+      "jass.storm",
+      "_SLA_temp",
+      "env_vars",
+      "base",
+      "blizzard",
+      "solar_boot",
+      "solar_aes",
+      "solar_addons",
+      "md5",
+      "base64",
+      "debugger",
+      "lua_debugger",
+      "json"
+    ]
+  }
+}

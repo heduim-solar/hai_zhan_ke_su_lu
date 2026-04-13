@@ -1,0 +1,102 @@
+local ____lualib = require("lualib_bundle")
+local __TS__Class = ____lualib.__TS__Class
+local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["6"] = 1,["7"] = 1,["8"] = 1,["10"] = 1,["11"] = 2,["12"] = 3,["13"] = 7,["14"] = 9,["15"] = 11,["16"] = 13,["17"] = 15,["18"] = 17,["19"] = 19,["20"] = 21,["21"] = 23,["22"] = 28,["23"] = 30,["24"] = 32,["25"] = 34,["26"] = 36,["27"] = 38,["28"] = 44,["29"] = 46,["30"] = 48,["31"] = 50,["32"] = 54,["33"] = 61,["34"] = 62,["35"] = 63,["36"] = 64,["37"] = 65,["38"] = 66,["39"] = 67,["40"] = 68,["41"] = 69,["42"] = 2,["43"] = 74,["44"] = 75,["45"] = 77,["46"] = 78,["47"] = 79,["48"] = 80,["49"] = 81,["50"] = 82,["51"] = 83,["52"] = 84,["53"] = 85,["54"] = 86,["55"] = 87,["56"] = 88,["57"] = 89,["58"] = 90,["59"] = 91,["60"] = 92,["61"] = 93,["62"] = 94,["63"] = 96,["64"] = 97,["65"] = 98,["66"] = 99,["67"] = 100,["68"] = 101,["69"] = 102,["70"] = 103,["71"] = 104,["72"] = 105,["73"] = 106,["74"] = 107,["75"] = 108,["76"] = 109,["77"] = 110,["78"] = 111,["79"] = 112,["80"] = 113,["81"] = 114,["82"] = 115,["83"] = 116,["84"] = 119,["85"] = 120,["86"] = 121,["87"] = 122,["88"] = 123,["89"] = 124,["90"] = 125,["91"] = 128,["92"] = 129,["93"] = 130,["94"] = 131,["95"] = 132,["96"] = 133,["97"] = 134,["98"] = 135,["99"] = 136,["100"] = 137,["101"] = 74});
+local ____exports = {}
+____exports.default = __TS__Class()
+local Constant = ____exports.default
+Constant.name = "Constant"
+function Constant.prototype.____constructor(self)
+end
+function Constant.init(self)
+    self:initJapi0()
+    FRAMEPOINT_TOPLEFT = 0
+    FRAMEPOINT_TOP = 1
+    FRAMEPOINT_TOPRIGHT = 2
+    FRAMEPOINT_LEFT = 3
+    FRAMEPOINT_CENTER = 4
+    FRAMEPOINT_RIGHT = 5
+    FRAMEPOINT_BOTTOMLEFT = 6
+    FRAMEPOINT_BOTTOM = 7
+    FRAMEPOINT_BOTTOMRIGHT = 8
+    FRAMEEVENT_CONTROL_CLICK = 1
+    FRAMEEVENT_MOUSE_ENTER = 2
+    FRAMEEVENT_MOUSE_LEAVE = 3
+    FRAMEEVENT_MOUSE_UP = 4
+    FRAMEEVENT_MOUSE_DOWN = 5
+    FRAMEEVENT_MOUSE_WHEEL = 6
+    FRAMEEVENT_CHECKBOX_CHECKED = 7
+    FRAMEEVENT_CHECKBOX_UNCHECKED = 8
+    FRAMEEVENT_EDITBOX_TEXT_CHANGED = 9
+    FRAMEEVENT_POPUPMENU_ITEM_CHANGED = 10
+    FRAMEEVENT_MOUSE_DOUBLECLICK = 12
+    TEXTALIGN_TOPLEFT = 11
+    TEXTALIGN_TOP = 17
+    TEXTALIGN_TOPRIGHT = 37
+    TEXTALIGN_CENTER = 18
+    TEXTALIGN_LEFT = 10
+    TEXTALIGN_RIGHT = 34
+    TEXTALIGN_BOTTOMLEFT = 12
+    TEXTALIGN_BOTTOM = 20
+    TEXTALIGN_BOTTOMRIGHT = 36
+end
+function Constant.initJapi0(self)
+    ABILITY_STATE_COOLDOWN = 1
+    ABILITY_DATA_TARGS = 100
+    ABILITY_DATA_CAST = 101
+    ABILITY_DATA_DUR = 102
+    ABILITY_DATA_HERODUR = 103
+    ABILITY_DATA_COST = 104
+    ABILITY_DATA_COOL = 105
+    ABILITY_DATA_AREA = 106
+    ABILITY_DATA_RNG = 107
+    ABILITY_DATA_DATA_A = 108
+    ABILITY_DATA_DATA_B = 109
+    ABILITY_DATA_DATA_C = 110
+    ABILITY_DATA_DATA_D = 111
+    ABILITY_DATA_DATA_E = 112
+    ABILITY_DATA_DATA_F = 113
+    ABILITY_DATA_DATA_G = 114
+    ABILITY_DATA_DATA_H = 115
+    ABILITY_DATA_DATA_I = 116
+    ABILITY_DATA_UNITID = 117
+    ABILITY_DATA_HOTKET = 200
+    ABILITY_DATA_UNHOTKET = 201
+    ABILITY_DATA_RESEARCH_HOTKEY = 202
+    ABILITY_DATA_NAME = 203
+    ABILITY_DATA_ART = 204
+    ABILITY_DATA_TARGET_ART = 205
+    ABILITY_DATA_CASTER_ART = 206
+    ABILITY_DATA_EFFECT_ART = 207
+    ABILITY_DATA_AREAEFFECT_ART = 208
+    ABILITY_DATA_MISSILE_ART = 209
+    ABILITY_DATA_SPECIAL_ART = 210
+    ABILITY_DATA_LIGHTNING_EFFECT = 211
+    ABILITY_DATA_BUFF_TIP = 212
+    ABILITY_DATA_BUFF_UBERTIP = 213
+    ABILITY_DATA_RESEARCH_TIP = 214
+    ABILITY_DATA_TIP = 215
+    ABILITY_DATA_UNTIP = 216
+    ABILITY_DATA_RESEARCH_UBERTIP = 217
+    ABILITY_DATA_UBERTIP = 218
+    ABILITY_DATA_UNUBERTIP = 219
+    ABILITY_DATA_UNART = 220
+    EVENT_DAMAGE_DATA_VAILD = 0
+    EVENT_DAMAGE_DATA_IS_PHYSICAL = 1
+    EVENT_DAMAGE_DATA_IS_ATTACK = 2
+    EVENT_DAMAGE_DATA_IS_RANGED = 3
+    EVENT_DAMAGE_DATA_DAMAGE_TYPE = 4
+    EVENT_DAMAGE_DATA_WEAPON_TYPE = 5
+    EVENT_DAMAGE_DATA_ATTACK_TYPE = 6
+    UnitStateDamageDice = ConvertUnitState(16)
+    UnitStateDamageSide = ConvertUnitState(17)
+    UnitStateDamageBase = ConvertUnitState(18)
+    UnitStateDamageBonus = ConvertUnitState(19)
+    UnitStateDamageMix = ConvertUnitState(20)
+    UnitStateDamageMax = ConvertUnitState(21)
+    UnitStateDamageRange = ConvertUnitState(22)
+    UnitStateDamageCool = ConvertUnitState(37)
+    UnitStateAttackSpeed = ConvertUnitState(81)
+    UnitStateArmor = ConvertUnitState(32)
+end
+return ____exports

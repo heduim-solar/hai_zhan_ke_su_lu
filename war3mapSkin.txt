@@ -1,0 +1,3 @@
+[FrameDef]
+COLON_FOOD=TRIGSTR_2232
+

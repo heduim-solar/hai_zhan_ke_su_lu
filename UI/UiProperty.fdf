@@ -1,0 +1,31 @@
+// -- INCLUDE FILES 引用控件模板文件-----
+IncludeFile "UI\FrameDef\Glue\StandardTemplates.fdf",
+
+//No.1 Frame定义开始: [Backdrop]
+Frame "BACKDROP" "Backdrop" {
+	Height 0.040,
+	Width 0.040,
+	BackdropBlendAll, //开启透明通道
+}
+//No.1 [Backdrop]   :Frame定义结束
+
+
+//No.2 Frame定义开始: [Button]
+Frame "BUTTON" "Button" {
+	Height 0.040,
+	Width 0.040,
+
+	ControlStyle "AUTOTRACK|HIGHLIGHTONMOUSEOVER",
+	//Button子按钮-高亮
+	ControlMouseOverHighlight "Button_hl",
+	Frame "HIGHLIGHT" "Button_hl" {
+	HighlightAlphaMode "ADD",
+		HighlightType "FILETEXTURE",
+		HighlightAlphaFile "UI\Widgets\EscMenu\Human\quest-button-highlight.blp",
+	}
+
+
+}
+//No.2 [Button]   :Frame定义结束
+
+

@@ -1,0 +1,30 @@
+﻿
+
+Frame "SIMPLEFRAME" "_sl_simpleframe_and_frame" {
+	Frame "BACKDROP" "_sl_simpleframe_and_frame_frame" {
+	
+	}
+}
+
+//创建一个带边框的背景 宽100 高50
+Frame "BACKDROP" "_sl_border_backdrop"
+{
+    Width 0.0745,
+    Height 0.04325,
+
+    BackdropTileBackground,
+    BackdropBackground  "UI\Widgets\ToolTips\Human\human-tooltip-background.blp",
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+    BackdropCornerSize  0.012,
+    BackdropBackgroundSize  0.032,
+    BackdropBackgroundInsets 0.004f 0.004f 0.004f 0.004f,
+    BackdropEdgeFile  "UI\Widgets\ToolTips\Human\human-tooltip-border.blp",
+    BackdropBlendAll,
+}
+
+Frame "TEXT" "_sl_shadowtext"
+{
+	FontShadowColor 0.0 0.0 0.0 0.9,
+    FontShadowOffset 0.001 -0.002,
+}
+
